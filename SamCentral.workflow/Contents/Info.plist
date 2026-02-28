@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.apple.automator.SamCentral</string>
+    <key>CFBundleName</key>
+    <string>SamCentral</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>AMIsApplicationAction</key>
+    <true/>
+    <key>AMStayOpen</key>
+    <false/>
+    <key>AMCanShowWhenRun</key>
+    <false/>
+    <key>WindowSettings</key>
+    <dict>
+        <key>ActionsFocused</key>
+        <false/>
+        <key>CurrentView</key>
+        <string>SplitView</string>
+        <key>Frame</key>
+        <string>{{0, 0}, {800, 600}}</string>
+        <key>ShowActionLibrary</key>
+        <false/>
+        <key>ShowLog</key>
+        <false/>
+    </dict>
+</dict>
+</plist>
