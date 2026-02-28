@@ -1,0 +1,26 @@
+{
+  "name": "sam-central",
+  "version": "2.0.0",
+  "description": "Sam Central Command - South Consultants NZ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-mac": "electron-builder --mac --arm64"
+  },
+  "build": {
+    "appId": "nz.southconsultants.samcentral",
+    "productName": "Sam Central",
+    "mac": {
+      "category": "public.app-category.business",
+      "target": ["dmg"]
+    },
+    "protocols": [{
+      "name": "Sam Central",
+      "schemes": ["samcentral"]
+    }]
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}
