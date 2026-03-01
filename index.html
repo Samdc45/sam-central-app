@@ -262,7 +262,7 @@
     </div>
   </div>
 
-  <button class="install-btn" onclick="startInstall()">⬇ Install Sam Central</button>
+  <button class="install-btn" onclick="startInstall()">⬇ Install — Auto-Run</button>
   <div class="install-note">macOS 12+ · Apple Silicon & Intel · Free</div>
 </div>
 
@@ -310,25 +310,28 @@
     <div class="step">
       <div class="step-num">1</div>
       <div class="step-content">
-        <h3>Click Install &amp; Download</h3>
-        <p>Click the Install button above. Downloads <code>SamCentral-Setup.zip</code> to your Mac.</p>
+        <h3>Click Install — File Downloads</h3>
+        <p><code>SamCentral.command</code> downloads to your Mac automatically. Find it in your Downloads folder.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-num">2</div>
       <div class="step-content">
-        <h3>Unzip &amp; Run Setup</h3>
-        <p>Open the zip. Double-click <code>setup.sh</code> in Terminal, or right-click → Open With → Terminal.</p>
+        <h3>Double-Click SamCentral.command</h3>
+        <p>Terminal opens and runs everything automatically — Homebrew, Node.js, Electron, link checks. No typing needed.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-num">3</div>
       <div class="step-content">
-        <h3>Look for ⚙️ in Menu Bar</h3>
-        <p>The app launches in your Mac menu bar. Click the icon to open Sam Central dashboard.</p>
+        <h3>SC Appears in Menu Bar ✅</h3>
+        <p>Terminal closes itself. Look for <strong>SC</strong> in your Mac menu bar top-right. Click it — you&apos;re live.</p>
       </div>
     </div>
   </div>
+  <p style="text-align:center;color:#8b949e;font-size:0.85rem;margin-top:20px">
+    ⚠️ If macOS blocks the file: Right-click → Open → click Open anyway (one-time only)
+  </p>
 </div>
 
 <!-- REQUIREMENTS -->
@@ -355,13 +358,13 @@
     <div class="modal-icon">⬇️</div>
     <div class="modal-title">Install Sam Central</div>
     <ol class="modal-steps">
-      <li><strong>Download</strong> the setup zip below</li>
-      <li><strong>Unzip</strong> it (double-click the file)</li>
-      <li>Open <strong>Terminal</strong> → drag the folder in → type <code>bash setup.sh</code></li>
-      <li>Look for <strong>SC</strong> in your Mac menu bar ✅</li>
+      <li><strong>Download</strong> SamCentral.command (file downloads automatically)</li>
+      <li>Find it in your <strong>Downloads</strong> folder → <strong>Double-click</strong> it</li>
+      <li>If macOS warns: Right-click → Open → Open anyway</li>
+      <li>Terminal runs everything automatically → look for <strong>SC</strong> in menu bar ✅</li>
     </ol>
-    <a class="modal-download" href="https://github.com/Samdc45/sam-central-app/archive/refs/heads/main.zip">
-      ⬇ Download SamCentral-Setup.zip
+    <a class="modal-download" href="https://github.com/Samdc45/sam-central-app/raw/main/SamCentral.command">
+      ⬇ Download SamCentral.command
     </a>
     <button class="modal-close" onclick="closeModal()">Close</button>
   </div>
@@ -373,7 +376,7 @@
     // Also trigger direct download
     setTimeout(() => {
       const a = document.createElement('a')
-      a.href = 'https://github.com/Samdc45/sam-central-app/archive/refs/heads/main.zip'
+      a.href = 'https://github.com/Samdc45/sam-central-app/raw/main/SamCentral.command'
       a.download = 'SamCentral-Setup.zip'
       a.click()
     }, 500)
